@@ -38,7 +38,7 @@ class ColeccionDeHamburguesas {
 }
 
 
-
+//Colores
 struct Colores {
     let colores = [
         UIColor(red: 210/255.0, green: 90/255.0, blue: 45/255.0, alpha: 1),
