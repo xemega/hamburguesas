@@ -17,7 +17,8 @@ class ColeccionDePaises {
     
     func obtenPais( )->String {
         
-        return paises[Int(arc4random()) % paises.count]
+        //return paises[Int(arc4random()) % paises.count]
+         return paises[Int(arc4random_uniform(UInt32(paises.count)))]
     }
     
 }
@@ -29,7 +30,8 @@ class ColeccionDeHamburguesas {
     
     func obtenHamburguesa( )->String {
         
-        return hamburguesas[Int(arc4random()) % hamburguesas.count]
+        //return hamburguesas[Int(arc4random()) % hamburguesas.count]
+        return hamburguesas[Int(arc4random_uniform(UInt32(hamburguesas.count)))]
     }
 
     
@@ -50,7 +52,7 @@ struct Colores {
     ]
     
     func regresaColorAleatorio() -> UIColor{
-        let posicion = Int(arc4random()) % colores.count
+        let posicion = Int(arc4random() % UInt32(colores.count))
         return colores[posicion]
     }
 }
